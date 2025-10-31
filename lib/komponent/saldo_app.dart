@@ -7,7 +7,7 @@ class saldoapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 20),
+      margin: EdgeInsets.symmetric(horizontal: 10),
       height: 70,
       width: double.infinity,
       decoration: BoxDecoration(
@@ -15,7 +15,7 @@ class saldoapp extends StatelessWidget {
         border: Border.all(color: Colors.grey, width: 1),
         borderRadius: BorderRadius.circular(10),
         boxShadow: [
-          BoxShadow(color: Colors.grey, blurRadius: 5, offset: Offset(12, 8)),
+          BoxShadow(color: Colors.grey, blurRadius: 5, offset: Offset(5, 5)),
         ],
       ),
 

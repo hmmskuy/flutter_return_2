@@ -24,38 +24,45 @@ class _Page01State extends State<Page01> {
               width: double.infinity,
               decoration: BoxDecoration(
                 gradient: LinearGradient(
-                  colors: [Colors.red, Colors.white],
+                  colors: [Colors.green, Colors.white],
                   begin: AlignmentDirectional.topCenter,
                   end: AlignmentDirectional.bottomCenter,
                 ),
               ),
               child: Column(
                 children: [
-                  SizedBox(height: 25),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    spacing: 10,
-                    children: [
-                      SizedBox(height: 20),
-                      SizedBox(
-                        width: 350,
-                        child: TextField(
-                          decoration: InputDecoration(
-                            border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(20),
+                  SizedBox(height: 10),
+                  Padding(
+                    padding: const EdgeInsets.all(9),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      spacing: 10,
+                      children: [
+                        SizedBox(height: 20),
+                        Expanded(
+                          child: TextField(
+                            decoration: InputDecoration(
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(20),
+                              ),
+                              filled: true,
+                              fillColor: Color.fromARGB(255, 230, 229, 223),
+                              hintText: "Mau makan Apa hari ini",
+                              hintStyle: TextStyle(color: Colors.grey),
                             ),
-                            filled: true,
-                            fillColor: Color.fromARGB(255, 230, 229, 223),
-                            hintText: "Mau makan Apa hari ini",
-                            hintStyle: TextStyle(color: Colors.grey),
                           ),
                         ),
-                      ),
-                      CircleAvatar(
-                        radius: 25,
-                        child: Icon(Icons.person, size: 30, color: Colors.pink),
-                      ),
-                    ],
+
+                        CircleAvatar(
+                          radius: 25,
+                          child: Icon(
+                            Icons.person,
+                            size: 30,
+                            color: Colors.green,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                   SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
@@ -80,36 +87,40 @@ class _Page01State extends State<Page01> {
                       ],
                     ),
                   ),
+                  SizedBox(height: 10),
                   SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
-                    child: Row(
-                      spacing: 10,
-                      children: [
-                        SizedBox(height: 10),
-                        KomponentUi1(
-                          logo: 'assets/burger.png',
-                          text: "promo terus",
-                        ),
-                        KomponentUi1(
-                          logo: 'assets/store.png',
-                          text: 'restaurant',
-                        ),
-                        KomponentUi1(
-                          logo: 'assets/orange-juice.png',
-                          text: 'Minuman',
-                        ),
-                        KomponentUi1(
-                          logo: 'assets/vegetables.png',
-                          text: 'Buah & sayur',
-                        ),
-                      ],
+                    child: Expanded(
+                      child: Row(
+                        spacing: 10,
+                        children: [
+                          SizedBox(height: 10),
+                          KomponentUi1(
+                            logo: 'assets/burger.png',
+                            text: "promo terus",
+                          ),
+                          KomponentUi1(
+                            logo: 'assets/store.png',
+                            text: 'restaurant',
+                          ),
+                          KomponentUi1(
+                            logo: 'assets/orange-juice.png',
+                            text: 'Minuman',
+                          ),
+                          KomponentUi1(
+                            logo: 'assets/vegetables.png',
+                            text: 'Buah & sayur',
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ],
               ),
             ),
+            SizedBox(height: 15),
             saldoapp(),
-            SizedBox(height: 30),
+            SizedBox(height: 25),
             Column(
               spacing: 20,
               children: [
@@ -123,7 +134,7 @@ class _Page01State extends State<Page01> {
                 ),
               ],
             ),
-            SizedBox(height: 30),
+            SizedBox(height: 15),
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -136,9 +147,9 @@ class _Page01State extends State<Page01> {
                 ),
               ],
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 10),
             SizedBox(
-              height: 200,
+              height: 185,
               width: double.infinity,
               child: PageView(
                 children: [
