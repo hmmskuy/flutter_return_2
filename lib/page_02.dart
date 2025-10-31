@@ -81,9 +81,10 @@ class Page02 extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.all(8),
                       child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Container(
                                 width: 460,
@@ -159,12 +160,74 @@ class Page02 extends StatelessWidget {
                               color: Colors.grey,
                             ),
                           ),
-                          SizedBox(width: 10),
                         ],
                       ),
                     ),
                   ],
                 ),
+              ),
+            ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Container(
+                    width: 80,
+                    height: 80,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(100),
+                      color: Colors.grey,
+                    ),
+                  ),
+
+                  SizedBox(width: 10),
+                  Container(
+                    width: 80,
+                    height: 80,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(100),
+                      color: Colors.grey,
+                    ),
+                  ),
+                  SizedBox(width: 10),
+                  Container(
+                    width: 80,
+                    height: 80,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(100),
+                      color: Colors.grey,
+                    ),
+                  ),
+                  SizedBox(width: 10),
+                  Container(
+                    width: 80,
+                    height: 80,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(100),
+                      color: Colors.grey,
+                    ),
+                  ),
+                  SizedBox(width: 10),
+                  Container(
+                    width: 80,
+                    height: 80,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(100),
+                      color: Colors.grey,
+                    ),
+                  ),
+                  SizedBox(width: 10),
+                  Container(
+                    width: 80,
+                    height: 80,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(100),
+                      color: Colors.grey,
+                    ),
+                  ),
+                  SizedBox(width: 10),
+                ],
               ),
             ),
           ],
